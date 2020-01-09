@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Result Form</title>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td><b>Nama</b></td><td th:text="${result.nama}"></td>
+		</tr>
+		<tr>
+			<td><b>Kelas</b></td><td><span th:text="${result.kelas}"></span> tahun</td>
+		</tr>
+		<tr>
+			<td><b>Kelas</b></td><td th:text="${result.kelas}+' tahun'"></td>
+		</tr>
+		<tr>
+			<td><b>Nama Umur</b></td><td th:text="${result.nama}+' '+${result.kelas}"></td>
+		</tr>
+		
+		<!-- <tr>
+			<td><b>Nama</b></td><td th:text="${nama}"></td>
+		</tr>
+		<tr>
+			<td><b>Umur</b></td><td><span th:text="${umur}"></span> tahun</td>
+		</tr> -->
+	</table>
+</body>
+</html>

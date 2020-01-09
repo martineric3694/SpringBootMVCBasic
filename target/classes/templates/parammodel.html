@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Param Model Page</title>
+</head>
+<body>
+	<span th:if="${object != null}">
+		<h2 th:text="${object.nama}">nama</h2>
+		<h2 th:text="${object.kelas}">kelas</h2>
+	</span>
+</body>
+</html>

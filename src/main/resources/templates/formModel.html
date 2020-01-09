@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Page</title>
+</head>
+<body>
+	<table>
+		<form action="" th:action="@{/hello/formmodel}" th:object="${paramModel}" method="post">
+			<tr>
+				<td>Nama</td><td><input type="text" th:field="*{nama}"/></td>
+			</tr>
+			<tr>
+				<td>Kelas</td><td><input type="text" th:field="*{kelas}"/></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Send"/></td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>
